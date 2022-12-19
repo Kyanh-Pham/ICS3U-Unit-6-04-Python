@@ -23,6 +23,7 @@ def main():
 
     a_2d_list = []
 
+    # input
     rows = input("How many rows would you like: ")
     columns = input("How many columns would you like: ")
 
@@ -39,6 +40,7 @@ def main():
             a_2d_list.append(temp_column)
             print("")
 
+        # calls function
         average = average_of_numbers(rows_integer, columns_integer, a_2d_list)
         print("\nThe average of the numbers is: {0}".format(average))
     except Exception:
